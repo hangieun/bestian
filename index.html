@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./css/index_pc.css">
+    <link rel="stylesheet" href="./css/index_tablet.css">
+    <link rel="stylesheet" href="./css/index_mobile.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="./js/numIncrease.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <!-- pc 상단메뉴 -->
+        <div class="pcHeader">
+            <div class="top">
+                <div class="inner_content">
+                    <ul class="lnb">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="inner_content">
+                    <div class="logo">
+                        <h1><a href="#"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+                    </div>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">재단소개</a>
+                            <ul>
+                                <li><a href="#">대표인사말</a></li>
+                                <li><a href="#">재단소개</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">캐릭터</a></li>
+                                <li><a href="#">홍보대사</a></li>
+                                <li><a href="#">연차보고서</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">사업소개</a>
+                            <ul>
+                                <li><a href="#">시점에 따른 사업</a></li>
+                                <li><a href="#">미래를 위한 소통</a></li>
+                                <li><a href="#">지역 복지 사업</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">후원하기</a>
+                            <ul>
+                                <li><a href="#">정기후원</a></li>
+                                <li><a href="#">일시후원</a></li>
+                                <li><a href="#">물품후원</a></li>
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">기부금영수증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">나눔스토리</a>
+                            <ul>
+                                <li><a href="#">힐링스토리</a></li>
+                                <li><a href="#">현장스토리</a></li>
+                                <li><a href="#">해피스토리</a></li>
+                                <li><a href="#">언론보도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">콘텐츠</a>
+                            <ul>
+                                <li><a href="#">Bestian's</a></li>
+                                <li><a href="#">공모전 수상작</a></li>
+                                <li><a href="#">멘토링그림동화</a></li>
+                                <li><a href="#">멘토링수필집</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- tablet 상단메뉴 -->
+        <div class="tabHeader">
+            <div class="inner_content">
+                <h1 class="logo"><a href="#"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+                <span><a href="#" class="menu_bar_open"><img src="./img/8.menu_bar.svg" alt="메뉴바 버튼"></a></span>
+            </div>
+            <div class="tabHeader_menu">
+                <ul class="lnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+                </ul>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul>
+                            <li><a href="#">대표인사말</a></li>
+                            <li><a href="#">재단소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">홍보대사</a></li>
+                            <li><a href="#">연차보고서</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">시점에 따른 사업</a></li>
+                            <li><a href="#">미래를 위한 소통</a></li>
+                            <li><a href="#">지역 복지 사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul>
+                            <li><a href="#">정기후원</a></li>
+                            <li><a href="#">일시후원</a></li>
+                            <li><a href="#">물품후원</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">기부금영수증</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">나눔스토리</a>
+                        <ul>
+                            <li><a href="#">힐링스토리</a></li>
+                            <li><a href="#">현장스토리</a></li>
+                            <li><a href="#">해피스토리</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                        <ul>
+                            <li><a href="#">Bestian's</a></li>
+                            <li><a href="#">공모전 수상작</a></li>
+                            <li><a href="#">멘토링그림동화</a></li>
+                            <li><a href="#">멘토링수필집</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile 상단메뉴 -->
+        <div class="moHeader">
+            <div class="inner_content">
+                <h1 class="logo"><a href="#"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+                <span><a href="#" class="menu_bar_open mobile_open"><img src="./mobile_img/1.menu_bar.svg" alt="메뉴바 버튼"></a></span>
+            </div>
+            <div class="moHeader_menu">
+                <ul class="lnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+                </ul>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul>
+                            <li><a href="#">대표인사말</a></li>
+                            <li><a href="#">재단소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">홍보대사</a></li>
+                            <li><a href="#">연차보고서</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">시점에 따른 사업</a></li>
+                            <li><a href="#">미래를 위한 소통</a></li>
+                            <li><a href="#">지역 복지 사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul>
+                            <li><a href="#">정기후원</a></li>
+                            <li><a href="#">일시후원</a></li>
+                            <li><a href="#">물품후원</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">기부금영수증</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">나눔스토리</a>
+                        <ul>
+                            <li><a href="#">힐링스토리</a></li>
+                            <li><a href="#">현장스토리</a></li>
+                            <li><a href="#">해피스토리</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                        <ul>
+                            <li><a href="#">Bestian's</a></li>
+                            <li><a href="#">공모전 수상작</a></li>
+                            <li><a href="#">멘토링그림동화</a></li>
+                            <li><a href="#">멘토링수필집</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="allcontent">
+            <!-- 1섹션 pc/tab 메인 배너 -->
+            <section class="main_banner">
+                <div class="main_station">
+                    <ul class="main_train">
+                        <li>
+                            <img src="./img/2.main_banner.png" alt="메인배너1">
+                            <div class="main_txt">
+                                <h3>베스티안재단은 <br><span>화상으로 고통받지 않는 사회</span><br> 만들기에 앞장섭니다</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/2.main_slide1.png" alt="메인배너2">
+                            <div class="txtframe">
+                                <h4>아동 청소년 의료비 지원사업</h4>
+                                <h5>화상으로 고통받는 저소득가정의 환자 <br>의료비지원 사업에 대해 안내합니다</h5>
+                                <p><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/2.main_slide2.png" alt="메인배너3">
+                            <div class="txtframe">
+                                <h4>아동 화상 예방교육</h4>
+                                <h5>화상 발생률이 높은 5~7세 아동 대상<br>
+                                    화상예방 및 인식개선 교육을 제공합니다 </h5>
+                                <p><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/2.main_slide3.png" alt="메인배너4">
+                            <div class="txtframe">
+                                <h4>노인 화상 예방교육</h4>
+                                <h5>안전에 취약한 60세 이상 어르신 대상<br>
+                                    화상사고 예방 및 응급처치 교육을 제공합니다</h5>
+                                <p><a href="#">자세히보기</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_train_ctrl">
+                    <div class="main_btn on"><span>1</span></div>
+                    <div class="main_btn"><span>1</span></div>
+                    <div class="main_btn"><span>1</span></div>
+                    <div class="main_btn"><span>1</span></div>
+                </div>
+            </section>
+            <!-- 1섹션 mobile 메인 배너 -->
+            <section class="mobileMain">
+                <div class="inner_content">
+                    <!-- swiper 기능 사용하기 -->
+                    <div class="mobileMain_station swiper">
+                        <ul class="mobileMain_train swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/1.main_img1.png" alt="아동,청소년 의료비 지원사업">
+                                <div class="txtframe">
+                                    <h4>아동&middot;청소년 의료비 지원사업</h4>
+                                    <p>화상으로 고통받는 저소득가정의 환자 <br> 의료비지원 사업에 대해 안내합니다</p>
+                                    <a href="#" class="mobileMain_btn">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/1.main_img2.png" alt="아동화상예방교육">
+                                <div class="txtframe">
+                                    <h4>아동 화상 예방교육</h4>
+                                    <p>화상 발생률이 높은 5~7세 아동 대상<br>
+                                        화상예방 및 인식개선 교육을 제공합니다 </p>
+                                    <a href="#" class="mobileMain_btn">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/1.main_img3.png" alt="노인화상예방교육">
+                                <div class="txtframe">
+                                    <h4>노인 화상 예방교육</h4>
+                                    <p>60세 이상 어르신 대상 화상사고 예방<br>
+                                        및 응급처치 교육을 제공합니다</p>
+                                    <a href="#" class="mobileMain_btn">자세히보기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 2섹션 탭메뉴 -->
+            <section class="tab">
+                <div class="inner_content">
+                    <div class="tab_top">
+                        <h4>베스티안재단은 화상환자들을<br>어떻게 지원하고 있나요?</h4>
+                        <ul class="tab_menu">
+                            <li class="on">의료비 지원</li>
+                            <li>생계비 지원</li>
+                            <li>화상 예방교육</li>
+                            <li>치료물품 지원</li>
+                        </ul>
+                    </div>
+                    <div class="tab_station">
+                        <ul class="tab_train">
+                            <li class="on">
+                                <div class="tab_banner">
+                                    <img src="./img/3.tab_banner1.png" alt="의료비 지원">
+                                    <div class="txtframe">
+                                        <h6>의료비 지원</h6>
+                                        <p>저소득층 화상 환자들에게 긴급 및 재건 의료비를 지원합니다</p>
+                                        <a href="#" class="tab_btn">자세히 보기</a>
+                                    </div>
+                                </div>
+                                <div class="tab_txt">
+                                    <p>2023년 지원 환자 <span id="ni1">598</span>건</p>
+                                    <p>의료비 <span id="ni2">1,539,865,450</span>원</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tab_banner">
+                                    <img src="./img/3.tab_banner2.png" alt="생계비 지원">
+                                    <div class="txtframe">
+                                        <h6>생계비 지원</h6>
+                                        <p>화상의 고통으로 인해 일상생활이 어려워진 가정에 긴급 생계비를 지원합니다</p>
+                                        <a href="#" class="tab_btn">자세히 보기</a>
+                                    </div>
+                                </div>
+                                <div class="tab_txt">
+                                    <p>2023년 지원 대상자 <span id="ni3">242</span>건</p>
+                                    <p>생계비 <span id="ni4">265,252,112</span>원</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tab_banner">
+                                    <img src="./img/3.tab_banner3.png" alt="화상 예방교육">
+                                    <div class="txtframe">
+                                        <h6>화상 예방교육</h6>
+                                        <p>아동 및 노인을 대상으로 화상 예방 및 인식개선교육을 진행합니다</p>
+                                        <a href="#" class="tab_btn">자세히 보기</a>
+                                    </div>
+                                </div>
+                                <div class="tab_txt">
+                                    <p>2023년 아동 화상예방교육 <span id="ni5">590</span>회</p>
+                                    <p>노인 화상예방교육 <span id="ni6">81</span>회</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tab_banner">
+                                    <img src="./img/3.tab_banner4.png" alt="치료물품 지원">
+                                    <div class="txtframe">
+                                        <h6>치료물품 지원</h6>
+                                        <p>중증 화상환자분들 대상으로 필요한 물품을 지원합니다</p>
+                                        <a href="#" class="tab_btn">자세히 보기</a>
+                                    </div>
+                                </div>
+                                <div class="tab_txt">
+                                    <p>2023년 지원 물품 <span id="ni7">75</span>건</p>
+                                    <p>치료물품비 <span id="ni8">35,065,290</span>원</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 3섹션 후원 슬라이드 배너 -->
+            <section class="support">
+                <div class="support_top">
+                    <div class="inner_content">
+                        <div class="sup_top">
+                            <img src="./img/4.title_img.png" alt="후원섹션 이미지">
+                            <div class="sup_txt">
+                                <h4>나눔은 아름답게 나눔은 세상을 <span>희망으로</span> 바꿉니다</h4>
+                                <p>여러분의 후원금은 이렇게 쓰입니다</p>
+                                <ul class="sup_ctg">
+                                    <li>수술 및 치료</li>
+                                    <li>물품지원</li>
+                                    <li>생계비</li>
+                                    <li>화상 예방교육</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="support_bottom">
+                    <div class="inner_content">
+                        <div class="sup_station swiper">
+                            <ul class="sup_train swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="./img/4.icon1.svg" alt="정기후원">
+                                    <h6>정기후원</h6>
+                                    <p>화상환자가 안정적으로 치료를 받을 수 있도록 지원합니다</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./img/4.icon2.svg" alt="일시후원">
+                                    <h6>일시후원</h6>
+                                    <p>화상환자의 수술 및 치료비 지원에 사용됩니다</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./img/4.icon3.svg" alt="물품후원">
+                                    <h6>물품후원</h6>
+                                    <p>기증된 물품은 어려운 가정의 화상환자를 위해 사용됩니다</p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./img/4.icon4.svg" alt="기념일후원">
+                                    <h6>기념일후원</h6>
+                                    <p>특별한 날, 더욱 의미있게 여러분의 기쁨을 나누어주세요</p>
+                                </li>
+                            </ul>
+                            <div class="support_viewer">
+                                <div class="process_box">
+                                    <div class="current_process_bar"></div>
+                                </div>
+                                <ul class="slide_viewer">
+                                    <li class="on">정기후원</li>
+                                    <li>일시후원</li>
+                                    <li>물품후원</li>
+                                    <li>기념일후원</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_support_bottom">
+                    <div class="inner_content">
+                        <div class="sup_station">
+                            <ul class="sup_train">
+                                <li>
+                                    <img src="./img/4.icon1.svg" alt="정기후원">
+                                    <h6>정기후원</h6>
+                                    <p>화상환자가 안정적으로 치료를 받을 수 있도록 지원합니다</p>
+                                </li>
+                                <li>
+                                    <img src="./img/4.icon2.svg" alt="일시후원">
+                                    <h6>일시후원</h6>
+                                    <p>화상환자의 수술 및 치료비 지원에 사용됩니다</p>
+                                </li>
+                                <li>
+                                    <img src="./img/4.icon3.svg" alt="물품후원">
+                                    <h6>물품후원</h6>
+                                    <p>기증된 물품은 어려운 가정의 화상환자를 위해 사용됩니다</p>
+                                </li>
+                                <li>
+                                    <img src="./img/4.icon4.svg" alt="기념일후원">
+                                    <h6>기념일후원</h6>
+                                    <p>특별한 날, 더욱 의미있게 여러분의 기쁨을 나누어주세요</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="mobile_support_btn">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- pc/tablet 4섹션 뉴스 슬라이드 배너 -->
+            <section class="news">
+                <div class="inner_content">
+                    <h4>베스티안의 이야기, 지금 확인해보세요!</h4>
+                    <div class="news_station">
+                        <ul class="news_train">
+                            <li>
+                                <div class="txtframe">
+                                    <p class="news_ctg">힐링스토리</p>
+                                    <h5>감사편지 - 베풀어주신 은혜 잊지 않고 바르게 키우겠습니다.</h5>
+                                    <p>의료비 지원으로 세 차례의 수술과 중증화상을 이겨낸 나영이(가명) 이야기</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                                <div class="news_img">
+                                    <img src="./img/5.slide_img1.png" alt="힐링스토리 이미지">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="txtframe">
+                                    <p class="news_ctg">현장스토리</p>
+                                    <h5>2023년 어린이
+                                        화상예방 인식개선교육
+                                        (삼성 SDI지원) 11월 이야기</h5>
+                                    <p>삼성 SDI와 베스티안재단이 함께 만드는
+                                        화상으로부터 안전한 사회!
+                                        11월에 어떤 교육이 이루어졌을까요?</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                                <div class="news_img">
+                                    <img src="./img/5.slide_img2.png" alt="현장스토리 이미지">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="txtframe">
+                                    <p class="news_ctg">언론보도</p>
+                                    <h5>젠바이오,
+                                        베스티안재단에
+                                        화상환자 위한 보습제 기부</h5>
+                                    <p>젠바이오에서 화상환자들을 위해
+                                        1,000만원 상당의 수딩크림을 후원하며
+                                        사랑의 손길을 내밀었습니다</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                                <div class="news_img">
+                                    <img src="./img/5.slide_img3.png" alt="언론보도 이미지">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="txtframe">
+                                    <p class="news_ctg">현장스토리</p>
+                                    <h5>노인들의 행복한
+                                        노후생활과 복지증진을 위한
+                                        학리시니어센터 업무협약</h5>
+                                    <p>강남구 지역 내 노인들의 
+                                        행복한 노후생활과 복지증진을 위해
+                                        베스티안재단과 학리시니어센터가 
+                                        업무 협약을 체결했습니다</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                                <div class="news_img">
+                                    <img src="./img/5.slide_img4.png" alt="현장스토리 이미지">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news_train_ctrl">
+                        <div class="nctrl_btn on"><span>1</span></div>
+                        <div class="nctrl_btn"><span>1</span></div>
+                        <div class="nctrl_btn"><span>1</span></div>
+                        <div class="nctrl_btn"><span>1</span></div>
+                    </div>
+                </div>
+            </section>
+            <!-- mobile 4섹션 뉴스 배너 -->
+            <section class="moNews">
+                <div class="inner_content">
+                    <h4>베스티안의 이야기,<br>지금 확인해보세요!</h4>
+                    <div class="moNews_station swiper">
+                        <ul class="moNews_train swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/2.news_img1.png" alt="힐링스토리 이미지">
+                                <div class="txtframe">
+                                    <p class="news_ctg">힐링스토리</p>
+                                    <h5>감사편지 - 베풀어주신 은혜 잊지 않고 바르게 키우겠습니다.</h5>
+                                    <p>의료비 지원으로 세 차례의 수술과 중증화상을 이겨낸 나영이(가명) 이야기</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/2.news_img2.png" alt="현장스토리 이미지">
+                                <div class="txtframe">
+                                    <p class="news_ctg">현장스토리</p>
+                                    <h5>2023년 어린이
+                                        화상예방 인식개선교육
+                                        (삼성 SDI지원) 11월 이야기</h5>
+                                    <p>삼성 SDI와 베스티안재단이 함께 만드는
+                                        화상으로부터 안전한 사회!
+                                        11월에 어떤 교육이 이루어졌을까요?</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/2.news_img3.png" alt="언론보도 이미지">
+                                <div class="txtframe">
+                                    <p class="news_ctg">언론보도</p>
+                                    <h5>젠바이오,
+                                        베스티안재단에
+                                        화상환자 위한 보습제 기부</h5>
+                                    <p>젠바이오에서 화상환자들을 위해
+                                        1,000만원 상당의 수딩크림을 후원하며
+                                        사랑의 손길을 내밀었습니다</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="./mobile_img/2.news_img4.png" alt="현장스토리 이미지">
+                                <div class="txtframe">
+                                    <p class="news_ctg">현장스토리</p>
+                                    <h5>노인들의 행복한
+                                        노후생활과 복지증진을 위한
+                                        학리시니어센터 업무협약</h5>
+                                    <p>강남구 지역 내 노인들의 
+                                        행복한 노후생활과 복지증진을 위해
+                                        베스티안재단과 학리시니어센터가 
+                                        업무 협약을 체결했습니다</p>
+                                    <a href="#" class="news_btn">자세히보기</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- pc 5섹션 컨텐츠 배너 -->
+            <section class="pcContents">
+                    <div class="inner_content">
+                        <h4>베스티안 콘텐츠</h4>
+                        <div class="banner_station swiper">
+                            <ul class="banner_train swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <img src="./img/6.banner1.png" alt="어린이 화상 예방 상식">
+                                    <div class="txtframe">
+                                        <p class="contents_ctg">어린이 화상 예방상식</p>
+                                        <h5>화상예방에 힘쓰는 베스티안의 베티와 친구들과 함께 영상으로 배우는 '어린이 화상 예방상식'</h5>
+                                        <p>“몸에 불이 붙으면 어떻게 하나요?”
+                                            화상으로부터 내 몸을 건강하게 지켜봐요!</p>
+                                        <a href="#" class="contents_btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <img src="./img/6.banner2.png" alt="화상, 꼭 병원에 가야 하나요?">
+                                    <div class="txtframe">
+                                        <p class="contents_ctg">화상, 꼭 병원에 가야 하나요?</p>
+                                        <h5>베티와 의사선생님이 친절하게
+                                            알려주는 화상응급처치 방법!</h5>
+                                        <p>화상을 입은 후 초기치료가 소홀하면
+                                            감염이나 염증으로 변할 수 있어요.
+                                            화상 초기 응급처치 방법, 함께 보실까요?</p>
+                                        <a href="#" class="contents_btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="newsletter">
+                                        <div class="txtframe">
+                                            <p class="txt_title">뉴스레터 신청</p>
+                                            <p>베스티안재단의 소식을 뉴스레터로 빠르고 쉽게 받아보세요</p>
+                                            <p class="userInfo">
+                                                <input class="userName" type="text" placeholder="이름">
+                                                <input class="userMail" type="text" placeholder="이메일 주소">
+                                            </p>
+                                            <a href="#" class="contents_btn">신청하기</a>
+                                        </div>
+                                    </div>
+                                    <img src="./img/6.banner4.png" alt="베스티안 캐릭터">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="contents_line">
+                        <h5>함께하는 단체</h5>
+                        <div class="line_station swiper">
+                            <ul class="line_train swiper-wrapper">
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line1.svg" alt="보건복지부 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line2.svg" alt="신협사회공헌재단 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line3.svg" alt="대한의료사회복지사협회 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line4.svg" alt="한국노인인력개발원 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line5.svg" alt="해피빈 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line6.svg" alt="밀알복지재단 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line7.svg" alt="한국노인인력개발원 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line8.svg" alt="아이들과미래재단 로고"></a></li>
+                                <li class="swiper-slide"><a href="#"><img src="./img/6.line9.svg" alt="소방청 로고"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+            <!-- tablet 5섹션 컨텐츠 배너 -->
+            <section class="tabContents">
+                <div class="inner_content">
+                    <h4>베스티안 콘텐츠</h4>
+                    <ul class="banner_train">
+                        <li>
+                            <img src="./img/6.banner1.png" alt="어린이 화상 예방 상식">
+                            <div class="txtframe">
+                                <p class="contents_ctg">어린이 화상 예방상식</p>
+                                <h5>화상예방에 힘쓰는 베스티안의 베티와 친구들과 함께 영상으로 배우는 '어린이 화상 예방상식'</h5>
+                                <p>“몸에 불이 붙으면 어떻게 하나요?”
+                                    화상으로부터 내 몸을 건강하게 지켜봐요!</p>
+                                <a href="#" class="contents_btn">자세히보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./img/6.banner2.png" alt="화상, 꼭 병원에 가야 하나요?">
+                            <div class="txtframe">
+                                <p class="contents_ctg">화상, 꼭 병원에 가야 하나요?</p>
+                                <h5>베티와 의사선생님이 친절하게
+                                    알려주는 화상응급처치 방법!</h5>
+                                <p>화상을 입은 후 초기치료가 소홀하면
+                                    감염이나 염증으로 변할 수 있어요.
+                                    화상 초기 응급처치 방법, 함께 보실까요?</p>
+                                <a href="#" class="contents_btn">자세히보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="newsletter">
+                                <div class="txtframe">
+                                    <p class="txt_title">뉴스레터 신청</p>
+                                    <p>베스티안재단의 소식을 뉴스레터로 빠르고 쉽게 받아보세요</p>
+                                    <p class="userInfo">
+                                        <input class="userName" type="text" placeholder="이름">
+                                        <input class="userMail" type="text" placeholder="이메일 주소">
+                                    </p>
+                                    <a href="#" class="contents_btn">신청하기</a>
+                                </div>
+                            </div>
+                            <img class="chImg" src="./img/6.banner4.png" alt="베스티안 캐릭터">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- 하단 -->
+    <footer>
+        <div class="inner_content">
+            <div class="txtframe">
+                <ul class="foot_menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+                <div class="foot_info">
+                    <ul>
+                        <li>재단법인 베스티안재단</li>
+                        <li>사업자등록번호 220-82-09620</li>
+                        <li>대표 김경식</li>
+                        <li>서울시 성동구 왕십리로 382<br>베스티안서울병원 1층 사회복지사업본부</li>
+                    </ul>
+                    <ul>
+                        <li>대표전화 070-7603-1990~1</li>
+                        <li>팩스 02-6499-2950</li>
+                        <li>이메일 welfare@bestian.kr</li>
+                    </ul>
+                </div>
+                <p class="copy">Copyrightⓒ 2014 베스티안재단. All rights reserved.</p>
+            </div>
+            <div class="foot_logo">
+                <img src="./img/7.logo_foot.svg" alt="베스티안재단 하단로고">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
