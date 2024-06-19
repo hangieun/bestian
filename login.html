@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login_pc.css">
+    <link rel="stylesheet" href="./css/login_tab.css">
+    <link rel="stylesheet" href="./css/login_mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <!-- pc 상단 메뉴 -->
+    <div class="pcHeader">
+        <div class="top">
+            <div class="inner_content">
+                <ul class="lnb">
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="inner_content">
+                <div class="logo">
+                    <h1><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul>
+                            <li><a href="#">대표인사말</a></li>
+                            <li><a href="#">재단소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">홍보대사</a></li>
+                            <li><a href="#">연차보고서</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">시점에 따른 사업</a></li>
+                            <li><a href="#">미래를 위한 소통</a></li>
+                            <li><a href="#">지역 복지 사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul>
+                            <li><a href="#">정기후원</a></li>
+                            <li><a href="#">일시후원</a></li>
+                            <li><a href="#">물품후원</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">기부금영수증</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">나눔스토리</a>
+                        <ul>
+                            <li><a href="#">힐링스토리</a></li>
+                            <li><a href="#">현장스토리</a></li>
+                            <li><a href="#">해피스토리</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                        <ul>
+                            <li><a href="#">Bestian's</a></li>
+                            <li><a href="#">공모전 수상작</a></li>
+                            <li><a href="#">멘토링그림동화</a></li>
+                            <li><a href="#">멘토링수필집</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- tablet 상단메뉴 -->
+    <div class="tabHeader">
+        <div class="inner_content">
+            <h1 class="logo"><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+            <a href="#" class="menu_bar_open"></a>
+        </div>
+        <div class="tabHeader_menu">
+            <ul class="lnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+                <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+            </ul>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">대표인사말</a></li>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">캐릭터</a></li>
+                        <li><a href="#">홍보대사</a></li>
+                        <li><a href="#">연차보고서</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업소개</a>
+                    <ul>
+                        <li><a href="#">시점에 따른 사업</a></li>
+                        <li><a href="#">미래를 위한 소통</a></li>
+                        <li><a href="#">지역 복지 사업</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">정기후원</a></li>
+                        <li><a href="#">일시후원</a></li>
+                        <li><a href="#">물품후원</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">기부금영수증</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">나눔스토리</a>
+                    <ul>
+                        <li><a href="#">힐링스토리</a></li>
+                        <li><a href="#">현장스토리</a></li>
+                        <li><a href="#">해피스토리</a></li>
+                        <li><a href="#">언론보도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">콘텐츠</a>
+                    <ul>
+                        <li><a href="#">Bestian's</a></li>
+                        <li><a href="#">공모전 수상작</a></li>
+                        <li><a href="#">멘토링그림동화</a></li>
+                        <li><a href="#">멘토링수필집</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile 상단메뉴 -->
+    <div class="moHeader">
+        <div class="inner_content">
+            <h1 class="logo"><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+            <span><a href="#" class="menu_bar_open mobile_open"></a></span>
+        </div>
+        <div class="moHeader_menu">
+            <ul class="lnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+                <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+            </ul>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">대표인사말</a></li>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">캐릭터</a></li>
+                        <li><a href="#">홍보대사</a></li>
+                        <li><a href="#">연차보고서</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업소개</a>
+                    <ul>
+                        <li><a href="#">시점에 따른 사업</a></li>
+                        <li><a href="#">미래를 위한 소통</a></li>
+                        <li><a href="#">지역 복지 사업</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">정기후원</a></li>
+                        <li><a href="#">일시후원</a></li>
+                        <li><a href="#">물품후원</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">기부금영수증</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">나눔스토리</a>
+                    <ul>
+                        <li><a href="#">힐링스토리</a></li>
+                        <li><a href="#">현장스토리</a></li>
+                        <li><a href="#">해피스토리</a></li>
+                        <li><a href="#">언론보도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">콘텐츠</a>
+                    <ul>
+                        <li><a href="#">Bestian's</a></li>
+                        <li><a href="#">공모전 수상작</a></li>
+                        <li><a href="#">멘토링그림동화</a></li>
+                        <li><a href="#">멘토링수필집</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner_content">
+        <div class="wrap">
+            <h1 class="loginTitle">베스티안재단에<br>방문해주셔서 감사합니다</h1>
+            <p class="loginDescription">로그인을 통해 나의 후원정보를 확인해보세요</p>
+            <div class="loginForm">
+                <div class="logInput">
+                    <input class="userId" type="text" placeholder="아이디">
+                    <div class="idError"><p>아이디를 입력해주세요.</p></div>
+                </div>
+                <div class="logInput">
+                    <input class="userPw" type="text" placeholder="비밀번호">
+                    <div class="pwError"><p>비밀번호를 입력해주세요.</p></div>
+                </div>
+                <div class="logCheck">
+                    <label class="checkLabel">
+                        <input type="checkbox">
+                        <span class="checkboxIcon"></span>    
+                        <span class="checkboxTxt">아이디 저장</span>
+                    </label>
+                </div>
+                <div class="logAction">
+                    <button class="loginBtn" href="#">로그인</button>
+                </div>
+                <div class="loginLinks">
+                    <div class="linkItem"><a href="#">회원가입</a></div>
+                    <div class="linkItem"><a href="#">아이디 찾기</a></div>
+                    <div class="linkItem"><a href="#">비밀번호 변경</a></div>
+                </div>
+            </div>
+            <div class="loginInfo">
+                <p>후원 관련 문의사항은 <span class="blackColor">후원관리팀 070-7603-1982</span> 혹은 <span class="blackColor">bestianwel@nate.com</span>로 문의해주시기 바랍니다.</p>
+            </div>
+        </div>
+    </div>
+    <!-- 하단 -->
+    <footer>
+        <div class="inner_content">
+            <div class="txtframe">
+                <ul class="foot_menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+                <div class="foot_info">
+                    <ul>
+                        <li>재단법인 베스티안재단</li>
+                        <li>사업자등록번호 220-82-09620</li>
+                        <li>대표 김경식</li>
+                        <li>서울시 성동구 왕십리로 382<br>베스티안서울병원 1층 사회복지사업본부</li>
+                    </ul>
+                    <ul>
+                        <li>대표전화 070-7603-1990~1</li>
+                        <li>팩스 02-6499-2950</li>
+                        <li>이메일 welfare@bestian.kr</li>
+                    </ul>
+                </div>
+                <p class="copy">Copyrightⓒ 2014 베스티안재단. All rights reserved.</p>
+            </div>
+            <div class="foot_logo">
+                <img src="./img/7.logo_foot.svg" alt="베스티안재단 하단로고">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

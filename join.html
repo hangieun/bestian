@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/join_pc.css">
+    <link rel="stylesheet" href="./css/join_tab.css">
+    <link rel="stylesheet" href="./css/join_mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/join.js"></script>
+</head>
+<body>
+    <!-- pc 상단 메뉴 -->
+    <div class="pcHeader">
+        <div class="top">
+            <div class="inner_content">
+                <ul class="lnb">
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="inner_content">
+                <div class="logo">
+                    <h1><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul>
+                            <li><a href="#">대표인사말</a></li>
+                            <li><a href="#">재단소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">캐릭터</a></li>
+                            <li><a href="#">홍보대사</a></li>
+                            <li><a href="#">연차보고서</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul>
+                            <li><a href="#">시점에 따른 사업</a></li>
+                            <li><a href="#">미래를 위한 소통</a></li>
+                            <li><a href="#">지역 복지 사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul>
+                            <li><a href="#">정기후원</a></li>
+                            <li><a href="#">일시후원</a></li>
+                            <li><a href="#">물품후원</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">기부금영수증</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">나눔스토리</a>
+                        <ul>
+                            <li><a href="#">힐링스토리</a></li>
+                            <li><a href="#">현장스토리</a></li>
+                            <li><a href="#">해피스토리</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">콘텐츠</a>
+                        <ul>
+                            <li><a href="#">Bestian's</a></li>
+                            <li><a href="#">공모전 수상작</a></li>
+                            <li><a href="#">멘토링그림동화</a></li>
+                            <li><a href="#">멘토링수필집</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- tablet 상단메뉴 -->
+    <div class="tabHeader">
+        <div class="inner_content">
+            <h1 class="logo"><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+            <a href="#" class="menu_bar_open"></a>
+        </div>
+        <div class="tabHeader_menu">
+            <ul class="lnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+                <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+            </ul>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">대표인사말</a></li>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">캐릭터</a></li>
+                        <li><a href="#">홍보대사</a></li>
+                        <li><a href="#">연차보고서</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업소개</a>
+                    <ul>
+                        <li><a href="#">시점에 따른 사업</a></li>
+                        <li><a href="#">미래를 위한 소통</a></li>
+                        <li><a href="#">지역 복지 사업</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">정기후원</a></li>
+                        <li><a href="#">일시후원</a></li>
+                        <li><a href="#">물품후원</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">기부금영수증</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">나눔스토리</a>
+                    <ul>
+                        <li><a href="#">힐링스토리</a></li>
+                        <li><a href="#">현장스토리</a></li>
+                        <li><a href="#">해피스토리</a></li>
+                        <li><a href="#">언론보도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">콘텐츠</a>
+                    <ul>
+                        <li><a href="#">Bestian's</a></li>
+                        <li><a href="#">공모전 수상작</a></li>
+                        <li><a href="#">멘토링그림동화</a></li>
+                        <li><a href="#">멘토링수필집</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile 상단메뉴 -->
+    <div class="moHeader">
+        <div class="inner_content">
+            <h1 class="logo"><a href="./index.html"><img src="./img/1.logo.svg" alt="베스티안재단 상단로고"></a></h1>
+            <span><a href="#" class="menu_bar_open mobile_open"></a></span>
+        </div>
+        <div class="moHeader_menu">
+            <ul class="lnb">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./join.html">회원가입</a></li>
+                <li><a href="#" class="menu_close"><img src="./img/8.close_btn_white.svg" alt="메뉴 닫기 버튼"></a></li>
+            </ul>
+            <ul class="gnb">
+                <li>
+                    <a href="#">재단소개</a>
+                    <ul>
+                        <li><a href="#">대표인사말</a></li>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">캐릭터</a></li>
+                        <li><a href="#">홍보대사</a></li>
+                        <li><a href="#">연차보고서</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업소개</a>
+                    <ul>
+                        <li><a href="#">시점에 따른 사업</a></li>
+                        <li><a href="#">미래를 위한 소통</a></li>
+                        <li><a href="#">지역 복지 사업</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">후원하기</a>
+                    <ul>
+                        <li><a href="#">정기후원</a></li>
+                        <li><a href="#">일시후원</a></li>
+                        <li><a href="#">물품후원</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">기부금영수증</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">나눔스토리</a>
+                    <ul>
+                        <li><a href="#">힐링스토리</a></li>
+                        <li><a href="#">현장스토리</a></li>
+                        <li><a href="#">해피스토리</a></li>
+                        <li><a href="#">언론보도</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">콘텐츠</a>
+                    <ul>
+                        <li><a href="#">Bestian's</a></li>
+                        <li><a href="#">공모전 수상작</a></li>
+                        <li><a href="#">멘토링그림동화</a></li>
+                        <li><a href="#">멘토링수필집</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner_content">
+        <div class="wrap">
+            <h1 class="joinTitle">회원가입</h1>
+            <div class="joinForm">
+                <p class="joinDescription">회원가입 유형을 선택해주세요</p>
+                <div class="typeList">
+                    <ul class="jointype">
+                        <li><a class="type1" href="#"><span>개인 회원가입</span></a></li>
+                        <li><a class="type2" href="#"><span>단체 회원가입</span></a></li>
+                    </ul>
+                </div>
+                <div class="joinFrame">
+                    <div class="joinRadio">
+                        <label for="business">
+                            <input name="radiobtn" type="radio" id="business">
+                            <span class="radioBtn"></span>
+                            <span class="radiotxt1">사업자</span>
+                        </label>
+                        <label for="group">
+                            <input name="radiobtn" type="radio" id="group">
+                            <span class="radioBtn"></span>    
+                            <span class="radiotxt2">비사업자</span>
+                        </label>
+                    </div>
+                    <div class="userinfoStep">
+                        <form action="#" onsubmit="return check1()">
+                        <!-- 개인 회원 -->
+                            <div class="personalUser">
+                                <div class="personalUser_info1">
+                                    <dl class="nameFrame">
+                                        <dt>
+                                            <label for="userName">이름</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="text" class="userName" maxlength="15" placeholder="이름" id="userName">
+                                            <div class="dataError">이름을 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="birthFrame">
+                                        <dt>
+                                            <label for="userBirth">생년월일</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="number" class="userBirth" maxlength="8" placeholder="예시) 19910101" data-maxlength="8" id="userBirth">
+                                            <div class="dataError">생년월일을 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="personalUser_info2">
+                                    <dl class="phoneFrame">
+                                        <dt>
+                                            <label for="userPhone1">휴대폰번호</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="number" class="userPhone" id="userPhone1" maxlength="11" placeholder="휴대폰번호 - 제외 11자리" data-maxlength="11">
+                                            <div class="dataError">휴대폰번호를 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="confirmFrame">
+                                    <a href="#" class="confirmBtn">인증번호 발송</a>
+                                </div>
+                                <div class="notifyFrame notify1">
+                                    <span class="notifyCheck">
+                                        <label for="userAgree1">
+                                            <input type="checkbox" id="userAgree1">
+                                            <span class="checkBtn"></span>
+                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                        </label>
+                                        
+                                    </span>
+                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="termsView">
+                                        <div class="viewTxt">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>수집목적</th>
+                                                        <th>수집항목</th>
+                                                        <th>보유기간</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>이용자 식별, 본인여부, 후원내역 확인</td>
+                                                        <td>이름, 생년월일, 휴대폰번호, SNS아이디</td>
+                                                        <td>이용자 식별 및 본인여부확인 후 즉시파기</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                ※ 개인정보 수집 및 이용을 거부할 수 있으며, 거부 시 회원가입이 불가합니다. 자세한 내용은 월드비전 개인정보 처리방침을 참조해주시기 바랍니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dataError">개인정보 수집 동의에 체크해주세요.</div>
+                                <div class="commonBtn">
+                                    <a href="./join.html" class="cancelBtn">취소</a>
+                                    <input type="submit" value="다음" class="nextBtn">
+                                </div>
+                            </div>
+                        </form>
+                        <script>
+                            function isValid(idName){
+                                let isValid = true;
+                                if ($(idName).val().trim() === "") {
+                                    $(idName).next().show();
+                                    isValid = false;
+                                } else {
+                                    $(idName).next().hide();
+                                    isValid = true
+                                }
+                            }
+
+                            function check1(){
+                                isValid("#userName")
+                                isValid("#userBirth")
+                                isValid("#userPhone1")
+                                let isValid1 = true
+                                if($("#userAgree1").is(":checked") == false){
+                                    $(".notiyf1").next().show();
+                                    isValid1 = false;
+                                }else{
+                                    $(".notiyf1").next().hide();
+                                    isValid1 = true;
+                                }
+                                return false;
+                            }
+                        </script>
+                        <!-- -------------------단체 회원--------------- -->
+                        <!-- 단체/사업자 -->
+                        <form action="#" onsubmit="return check2()">
+                            <div class="businessUser">
+                                <div class="businessUser_info">
+                                    <dl class="groupnameFrame">
+                                        <dt>
+                                            <label for="companyName">사업자 확인</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="text" class="groupName" placeholder="단체명"  id="companyName">
+                                            <div class="dataError">단체명을 입력해주세요.</div>
+                                        </dd>
+                                        <dt>
+                                            <label for="groupNumber">사업자 번호 확인</label>
+                                        </dt>
+                                        <dd class="businessNumber">
+                                            <input type="number" class="groupNumber" maxlength="13" placeholder="사업자등록번호" data-maxlength="13" id="groupNumber">
+                                            <div class="dataError">사업자번호를 입력해주세요.</div>
+                                            <a class="groupNum_btn" href="#">사업자 번호 확인</a>
+                                        </dd>
+                                    </dl>
+                                    <dl class="staff">
+                                        <dt>
+                                            <label for="staffName1">담당자 이름</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="text" class="staffName"
+                                            maxlength="15" placeholder="담당자 이름" id="staffName1">
+                                            <div class="dataError">담당자이름을 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="notifyFrame notify2">
+                                    <span class="notifyCheck">
+                                        <label for="userAgree2">
+                                            <input type="checkbox" id="userAgree2">
+                                            <span class="checkBtn"></span>
+                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                        </label>
+                                    </span>
+                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="termsView">
+                                        <div class="viewTxt">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>수집목적</th>
+                                                        <th>수집항목</th>
+                                                        <th>보유기간</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>이용자 식별, 본인여부, 후원내역 확인</td>
+                                                        <td>이름, 생년월일, 휴대폰번호, SNS아이디</td>
+                                                        <td>이용자 식별 및 본인여부확인 후 즉시파기</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                ※ 개인정보 수집 및 이용을 거부할 수 있으며, 거부 시 회원가입이 불가합니다. 자세한 내용은 월드비전 개인정보 처리방침을 참조해주시기 바랍니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dataError">개인정보 수집 동의에 체크해주세요.</div>
+                                <div class="commonBtn">
+                                    <a href="./join.html" class="cancelBtn">취소</a>
+                                    <input type="submit" value="다음" class="nextBtn">
+                                </div>
+                            </div>
+                            
+                        </form>
+                        <script>
+                            function check2(){
+                                isValid("#companyName")
+                                isValid("#groupNumber")
+                                isValid("#staffName1")
+                                let isValid2 = true
+                                if($("#userAgree2").is(":checked") == false){
+                                    $(".notify2").next().show();
+                                    isValid2 = false;
+                                }else{
+                                    $(".notify2").next().hide();
+                                    isValid2 = true;
+                                }
+                                return false;
+                            }
+                        </script>
+                        
+                        <!-- 단체/비사업자 -->
+                        <form action="#" onsubmit="return check3()">
+                            <div class="groupUser">
+                                <div class="groupUser_info">
+                                    <dl class="groupnameFrame">
+                                        <dt>
+                                            <label for="groupName">단체명 확인</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="text" class="groupName" placeholder="단체명" id="groupName">
+                                            <div class="dataError">단체명을 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="staff">
+                                        <dt>
+                                            <label for="staffName2">담당자 이름</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="text" class="staffName"
+                                            maxlength="15" placeholder="담당자 이름" id="staffName2">
+                                            <div class="dataError">담당자 이름을 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="phoneFrame">
+                                        <dt>
+                                            <label for="userPhone2">휴대폰번호</label>
+                                        </dt>
+                                        <dd>
+                                            <input type="number" class="userPhone" maxlength="11" placeholder="휴대폰번호 '-'제외 11자리" data-maxlength="11" id="userPhone2">
+                                            <div class="dataError">휴대폰번호를 입력해주세요.</div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="confirmFrame">
+                                    <a href="#" class="confirmBtn">인증번호 발송</a>
+                                </div>
+                                <div class="notifyFrame notify3">
+                                    <span class="notifyCheck">
+                                        <label for="userAgree3">
+                                            <input type="checkbox" id="userAgree3">
+                                            <span class="checkBtn"></span>
+                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                        </label>
+                                    </span>
+                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="termsView">
+                                        <div class="viewTxt">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>수집목적</th>
+                                                        <th>수집항목</th>
+                                                        <th>보유기간</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>이용자 식별, 본인여부, 후원내역 확인</td>
+                                                        <td>이름, 생년월일, 휴대폰번호, SNS아이디</td>
+                                                        <td>이용자 식별 및 본인여부확인 후 즉시파기</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>
+                                                ※ 개인정보 수집 및 이용을 거부할 수 있으며, 거부 시 회원가입이 불가합니다. 자세한 내용은 월드비전 개인정보 처리방침을 참조해주시기 바랍니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dataError">개인정보 수집 동의에 체크해주세요.</div>
+                                <div class="commonBtn">
+                                    <a href="./join.html" class="cancelBtn">취소</a>
+                                    <input type="submit" value="다음" class="nextBtn">
+                                </div>
+                            </div>
+                            
+                        </form>
+                        <script>
+                            function check3(){
+                                isValid("#groupName")
+                                isValid("#staffName2")
+                                isValid("#userPhone2")
+                                let isValid3 = true
+                                if($("#userAgree3").is(":checked") == false){
+                                $(".notify3").next().show();
+                                isValid3 = false;
+                                }else{
+                                    $(".notify3").next().hide();
+                                    isValid3 = true;
+                                }
+                                return false;
+                            }
+
+                        </script>
+                    </div>
+                    
+                    
+                </div>
+                <div class="loginInfo">
+                    <p>후원 관련 문의사항은 <span class="blackColor">후원관리팀 070-7603-1982</span> 혹은 <span class="blackColor">bestianwel@nate.com</span>로 문의해주시기 바랍니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 하단 -->
+    <footer>
+        <div class="inner_content">
+            <div class="txtframe">
+                <ul class="foot_menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+                <div class="foot_info">
+                    <ul>
+                        <li>재단법인 베스티안재단</li>
+                        <li>사업자등록번호 220-82-09620</li>
+                        <li>대표 김경식</li>
+                        <li>서울시 성동구 왕십리로 382<br>베스티안서울병원 1층 사회복지사업본부</li>
+                    </ul>
+                    <ul>
+                        <li>대표전화 070-7603-1990~1</li>
+                        <li>팩스 02-6499-2950</li>
+                        <li>이메일 welfare@bestian.kr</li>
+                    </ul>
+                </div>
+                <p class="copy">Copyrightⓒ 2014 베스티안재단. All rights reserved.</p>
+            </div>
+            <div class="foot_logo">
+                <img src="./img/7.logo_foot.svg" alt="베스티안재단 하단로고">
+            </div>
+        </div>
+    </footer>   
+    
+</body>
+</html>

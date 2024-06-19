@@ -1,0 +1,287 @@
+@media(min-width:768px) and (max-width:1023px){
+    html{
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .inner_content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tabHeader{
+        z-index: 100;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: flex;
+    }
+    .pcHeader, .moHeader{display: none;}
+    .pcHeader>.top, .pcHeader>.bottom{display: none;}
+    .tabHeader{background: #fff;}
+    .tabHeader>.inner_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+    }
+    .logo{
+        width: 200px;
+        padding-top: 15px;
+    }
+    .menu_bar_open{
+        background: url(../img/8.menubar_black.svg) no-repeat 50% 50% / cover;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .tabHeader_menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 485px;
+        height: 100%;
+        background: rgb(0, 0, 0, 0.9);
+        color: rgba(255, 255, 255);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        transition: all 0.7s ease 0s;
+        transform: translateX(100%);
+    }
+    .tabHeader_menu.on{
+        transform: translateX(0);
+    }
+    .lnb{
+        box-sizing: border-box;
+        display: flex;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+    }
+    .lnb>li:first-of-type{
+        padding-right: 20px;
+    }
+    .lnb>li:last-of-type{
+        margin-left: auto;
+    }
+    .lnb>li:last-of-type>a{
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+    .lnb a:hover{color: #FFAF01;}
+    .gnb{
+        padding-top: 20px;
+    }
+    .gnb>li{
+        width: 190px;
+        position: relative;
+        font-size: 22px;
+    }
+    .gnb>li>a{
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .gnb>li>ul{
+        color: #fff;
+        position: absolute;
+        left: 160px;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.7s ease 0s;
+    }
+    .gnb>li:hover>ul{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .gnb>li>ul>li>a{
+        display: block;
+        width: 190px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .gnb a:hover{
+        color: #FFAF01;
+        font-weight: bold;
+    }
+
+    /* 로그인 상단 */
+    .wrap{
+        width: 465px;
+        margin: 200px auto 100px auto;
+        color: #393939;
+        font-size: 20px;
+    }
+    .loginTitle{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .loginDescription{
+        margin-top: 60px;
+        text-align: center;
+    }
+
+
+    /* 로그인 프레임 */
+    .loginForm{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .userId,.userPw{
+        width: 100%;
+        height: 60px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    /* --------------아이디/비밀번호 입력란----------------- */
+    input[type=text]{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .idError,.pwError{
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFAF01;
+        display: none;
+        transform: translateY(-8px);
+    }
+
+
+
+    /* --------------아이디 저장 체크박스-------------- */
+    input[type="checkbox"]{
+        display: none;
+      }
+    .checkLabel{
+        display: flex;
+        align-items: center;
+    }
+    .checkboxTxt{font-size: 18px;font-weight: 500;}
+    .checkboxIcon{
+        display: flex;
+        align-items: center;
+    }
+    .checkboxIcon::before{
+        content: "";
+        display: block;
+        margin-right: 7px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+        cursor: pointer;
+    }
+    /* 체크 버튼 눌렀을 때 */
+    .checkLabel input:checked + .checkboxIcon::before{
+        border: none;
+        background: url(../img/9.check.svg) #FFAF01 no-repeat 50% 50%;
+    }
+    /* --------------------------------------------- */
+
+
+
+    /* 로그인 버튼 */
+    .loginBtn{
+        background: #FFAF01;
+        width: 100%;
+        height: 60px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px; 
+        cursor: pointer;
+        margin: 40px 0 20px 0;
+    }
+
+    /* 로그인 링크 */
+    .loginLinks{
+        display: flex;
+        justify-content: center;
+    }
+    .linkItem{
+        font-weight: 500;
+        margin-right: 40px;
+        position: relative;
+    }
+    .linkItem:last-of-type{margin-right: 0;}
+    .linkItem::before{
+        content: "";
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -22px;
+        width: 1px;
+        height: 16px;
+        background: #ccc;
+    }
+    .linkItem:nth-of-type(1)::before{
+        display: none;
+    }
+
+    /* 문의사항 안내 */
+    .loginInfo{
+        margin-top: 60px;
+        color: #6d6d6d;
+        font-weight: 500;
+        text-align: center;
+    }
+    .blackColor{color: #393939;}
+
+
+
+
+
+
+     /* footer */
+     footer{
+        background: #333;
+        font-size: 16px;
+    }
+    footer .inner_content{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 30px 0;
+    }
+    .foot_menu{
+        display: flex;
+        color: #999;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+    .foot_menu>li{margin-right: 38px;}
+    .foot_menu>li:last-of-type{margin-right: 0;}
+    .foot_info{
+        display: flex;
+        color: #727272;
+        margin-bottom: 40px;
+    }
+    .foot_info>ul{
+        margin-right: 40px;
+    }
+    .foot_info>ul:last-of-type{margin-right: 0;}
+    .foot_info li{
+        padding: 10px 0;
+    }
+    .copy{
+        color: #606060;
+        font-size: 14px;
+
+    }
+
+
+}

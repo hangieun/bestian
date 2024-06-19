@@ -1,0 +1,282 @@
+@media(max-width:767px){
+    html{
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .inner_content{
+        width: 87%;
+        margin: 0 auto;
+    }
+    .pcHeader, .tabHeader{display: none;}
+    .pcHeader>.top, .pcHeader>.bottom{display: none;}
+
+     .moHeader{
+        border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+        padding: 10px 0;
+    }
+    .moHeader .inner_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .moHeader .menu_bar_open{
+        background: url(../img/8.menubar_black.svg) no-repeat 50% 50% / cover;
+        display: block;
+        width: 25px;
+        height: 25px;
+        transform: translateX(20px);
+    }
+    .moHeader_menu{
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0, 0.9);
+        color: rgba(255, 255, 255);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        transition: all 0.7s ease 0s;
+        transform: translateX(100%);
+    }
+    .moHeader_menu.on{transform: translateX(0);}
+    .logo{
+        width: 150px;
+        padding-top: 10px;
+    }
+    .lnb{
+        box-sizing: border-box;
+        display: flex;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .lnb>li:first-of-type{
+        padding-right: 20px;
+    }
+    .lnb>li:last-of-type{
+        margin-left: auto;
+    }
+    .lnb>li:last-of-type>a{
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+    .lnb a:hover{color: #FFAF01;}
+    .gnb{
+        padding-top: 20px;
+    }
+    .gnb>li{
+        width: 190px;
+        position: relative;
+        font-size: 18px;
+    }
+    .gnb>li>a{
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .gnb>li>ul{
+        color: #fff;
+        position: absolute;
+        left: 160px;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.7s ease 0s;
+    }
+    .gnb>li:hover>ul{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .gnb>li>ul>li>a{
+        display: block;
+        width: 190px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .gnb a:hover{
+        color: #FFAF01;
+        font-weight: bold;
+    }
+
+    /* 로그인 상단 */
+    .wrap{
+        width: 350px;
+        margin: 95px auto 80px auto;
+        color: #393939;
+        font-size: 15px;
+    }
+    .loginTitle{
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .loginDescription{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+
+    /* 로그인 프레임 */
+    .loginForm{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .userId,.userPw{
+        width: 100%;
+        height: 55px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    /* --------------아이디/비밀번호 입력란----------------- */
+    input[type=text]{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .idError,.pwError{
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFAF01;
+        display: none;
+        transform: translateY(-8px);
+    }
+
+
+
+    /* --------------아이디 저장 체크박스-------------- */
+    input[type="checkbox"]{
+        display: none;
+      }
+    .checkLabel{
+        display: flex;
+        align-items: center;
+    }
+    .checkboxTxt{font-size: 16px;font-weight: 500;}
+    .checkboxIcon{
+        display: flex;
+        align-items: center;
+    }
+    .checkboxIcon::before{
+        content: "";
+        display: block;
+        margin-right: 7px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 3px;
+        position: relative;
+        cursor: pointer;
+    }
+    /* 체크 버튼 눌렀을 때 */
+    .checkLabel input:checked + .checkboxIcon::before{
+        border: none;
+        background: url(../img/9.check.svg) #FFAF01 no-repeat 50% 50%;
+    }
+    /* --------------------------------------------- */
+
+
+
+    /* 로그인 버튼 */
+    .loginBtn{
+        background: #FFAF01;
+        width: 100%;
+        height: 60px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px; 
+        cursor: pointer;
+        margin: 40px 0 20px 0;
+    }
+
+    /* 로그인 링크 */
+    .loginLinks{
+        display: flex;
+        justify-content: center;
+    }
+    .linkItem{
+        font-weight: 500;
+        margin-right: 40px;
+        position: relative;
+    }
+    .linkItem:last-of-type{margin-right: 0;}
+    .linkItem::before{
+        content: "";
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: -22px;
+        width: 1px;
+        height: 16px;
+        background: #ccc;
+    }
+    .linkItem:nth-of-type(1)::before{
+        display: none;
+    }
+
+    /* 문의사항 안내 */
+    .loginInfo{
+        margin-top: 60px;
+        color: #6d6d6d;
+        font-weight: 500;
+        text-align: center;
+    }
+    .blackColor{color: #393939;}
+
+
+
+
+
+
+      /* footer */
+    footer{
+        border-top: 1px solid #333;
+        font-size: 12px;
+    }
+    footer .inner_content{
+       padding: 30px 0;
+    }
+    .foot_menu{
+        display: flex;
+        color: #282828;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .foot_menu>li{margin-right: 15px;}
+    .foot_info{
+        color: #727272;
+        display: flex;
+    }
+    .foot_info>ul{
+        margin-right: 20px;
+    }
+    .foot_info>ul:last-of-type{margin-right: 0;}
+    .foot_info li{
+        padding: 5px 0;
+    }
+    .copy{
+        margin-top: 15px;
+    }
+    .foot_logo{
+        margin: 25px auto 0 auto;
+        width: 100px;
+        height: 25px;
+    }
+    .foot_logo>img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+
+}

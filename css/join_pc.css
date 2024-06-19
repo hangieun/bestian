@@ -1,0 +1,461 @@
+@media(min-width:1024px){
+    html{
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .inner_content{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .tabHeader, .moHeader{display: none;}
+    .pcHeader{
+        z-index: 100;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 115px;
+        background: #fff;
+    }
+    .top{
+        border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+    }
+    .lnb{
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        margin-left: auto;
+    }
+    .bottom .inner_content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom:before{
+        content: "";
+        background: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 45px;
+        width: 100%;
+        height: 0px;
+        transition: all 0.7s ease 0s;
+    }
+    .bottom:hover .gnb{color: #000;}
+    .bottom:hover:before{
+        z-index: -1;
+        height:400px;
+        border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+        transition: all 0.7s ease 0s;
+        color: #000;
+    }
+    
+    .bottom:hover .gnb>li>a{font-weight: 500;}
+    
+    .logo{
+        width: 200px;
+        padding-top: 15px;
+    }
+    .gnb{
+        display: flex;
+        font-size: 22px;
+    }
+    .gnb:hover{color: #000;}
+    .gnb>li{
+        box-sizing: border-box;
+        width: 190px;
+        height: 0px;
+        padding-right: 20px;
+        padding-left: 10px;
+        position: relative;
+        transition: all 0.5s ease 0s;
+    }
+    .bottom .gnb>li:hover{
+        height: 400px;
+        background: rgb(255, 237, 200);
+        color: #000;
+    }
+    .gnb>li>a{
+        display: flex;
+        align-items: center;
+        padding: 17px 0;
+    }
+    .gnb>li>ul{
+        color: #000;
+        padding-left: 10px;
+        padding-right: 20px;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        height: 350px;
+        opacity: 0;
+        pointer-events: none;
+        overflow: hidden;
+        transition: all 0.7s ease 0s;
+    }
+    .bottom:hover .gnb>li>ul{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    /* .gnb:hover>li>ul{height: 350px;} */
+    .gnb>li>ul>li>a{
+        display: block;
+        padding: 5px 0;
+        width: 190px;
+    }
+    .gnb a:hover{
+        color: #FFAF01;
+        font-weight: bold;
+    }
+
+
+    /* 회원가입 상단 */
+    .wrap{
+        width: 465px;
+        margin: 150px auto 100px auto;
+        color: #393939;
+        font-size: 20px;
+    }
+    .joinTitle{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 1px solid #6D6D6D;
+        padding: 50px 0;
+    }
+
+
+
+    /* 회원가입 전체 프레임 */
+    .joinForm{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .joinDescription{
+        margin: 35px 0;
+        text-align: center;
+    }
+
+    /* ------------------회원가입 유형------------------- */
+    .jointype{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0px 10px;
+        width: 90%;
+    }
+    .jointype>li{
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    .jointype>li.on{
+        border: 1px solid #FFAF01;
+    }
+    .type1,.type2{
+        font-weight: 600;
+        display: block;
+        box-sizing: border-box;
+        width: 190px;
+        height: 180px;
+        padding: 122px 0 28px 0;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.07);
+        
+    }
+    .type1{
+        background: url(../img/10.joinType1.svg) no-repeat center 36px / 80px auto;
+    }
+    .type2{
+        background: url(../img/10.joinType2.svg) no-repeat center 36px / 80px auto;
+    }
+
+
+    /* -------라디오 버튼(사업자/비사업자 선택)-------- */
+    .joinRadio{
+        margin: 15px 0 30px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .joinRadio>label{
+        position: relative;
+        padding: 0 20px;
+        font-weight: 500;
+    }
+    input[type=radio]{display: none;}
+    .radioBtn{
+        display: inline-block;
+        margin-right: 7px;
+        background: url(../img/10.radiobtn.svg) no-repeat 50% 50% / cover;
+        left: -9px;
+        top: 2px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+        position: absolute;
+    }
+      /* 체크 버튼 눌렀을 때 */
+    input[type=radio]:checked + .radioBtn{
+        display: inline-block;
+        background: url(../img/10.radiobtn_on.svg) no-repeat 50% 50% / cover;
+    }
+
+    /* --------------회원 정보 입력 프레임------------------ */
+    .joinFrame{
+        width: 90%;
+        margin: 30px auto 0 auto;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .userinfoStep dt{
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .dataError{
+        color: #FFAF01;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        display: none;
+    }
+    input[type="text"], input[type="number"]{
+        font-size: 16px;
+        border-bottom: 1px solid #999;
+        transition: border-color 0.3s;
+    }
+    input[type="text"]:focus, input[type="number"]:focus{
+        border-bottom: 1px solid #FFAF01;
+    }
+
+    /* -------------개인회원-------------- */
+    .personalUser{margin-top: 30px;}
+    .personalUser_info1{
+        display: flex;
+        margin: 20px 0;
+    }
+    .userName,.userBirth,.userPhone{
+        border: none;
+        
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .nameFrame{margin-right: 35px;}
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+
+    /* 단체 회원 - 사업자 */
+
+    .groupName,.groupNumber,.staffName{
+        border: none;
+        border-bottom: 1px solid #999;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .groupnameFrame>dt+dd+dt{display: none;}
+    .businessNumber{
+        margin-top: 20px;
+        position: relative;
+    }
+    .groupNumber{
+        width: 60%;
+        margin-right: 15px;
+    }
+    .groupNum_btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: 500;
+        border: 1px solid #393939;
+        border-radius: 8px;
+
+    }
+    .staff{margin: 30px 0;}
+
+
+
+/* -------------------------------------공통----------------------------------- */
+
+    /* --------------개인정보 수집 동의 체크박스-------------- */
+    
+    .notifyFrame{
+        font-size: 18px;
+        border: 1px solid #6D6D6D;
+        box-sizing: border-box;
+        padding: 10px 8px;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    .notifyCheck,.viewBtn{color: #999;}
+    .pColor{
+        color: #FFAF01;
+        font-weight: 500;
+    }
+    .notifyCheck>label{
+        position: relative;
+        padding-left: 35px;
+    }
+    .checkBtn{
+        display: inline-block;
+        margin-right: 7px;
+        background: url(../img/10.checkbox.svg) no-repeat 50% 50% / cover;
+        left: 0;
+        top: 2px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+        position: absolute;
+    }
+      /* 체크 버튼 눌렀을 때 */
+      input#userAgree1:checked + .checkBtn,
+      input#userAgree2:checked + .checkBtn,
+      input#userAgree3:checked + .checkBtn{
+          display: inline-block;
+          background: url(../img/10.checkbox_on.svg) no-repeat 50% 50% / cover;
+      }
+
+    .viewBtn{
+        margin-left: 30px;
+        font-weight: 500;
+    }
+    .viewBtn:hover{
+        border-bottom: 1px solid #999;
+    }
+
+    .termsView{
+        box-sizing: border-box;
+        padding: 30px 15px;
+        width: 90%;
+        background: #f7f7f7;
+        margin: 30px auto 0 auto;
+        display: none;
+    }
+    .viewTxt{
+        color: #6D6D6D;
+        overflow: auto;
+        outline: none;
+        height: 130px;
+    }
+    .viewTxt thead{
+        background: #ececec;
+        font-weight: 400;
+    }
+    .viewTxt tbody{text-align: center;}
+    .viewTxt>p{font-size: 12px;}
+    .viewTxt table th{
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .viewTxt table td {
+        font-size: 14px;
+        padding: 20px 15px;
+        border-bottom: 1px solid #d9d9d9;
+        vertical-align: top;
+    }
+
+
+    /* 인증번호 발송 버튼 */
+    .confirmBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        color: #FFAF01;
+        width: 100%;
+        height: 60px;
+        border: 1px solid #FFAF01;
+        font-weight: 600;
+        border-radius: 8px; 
+        cursor: pointer;
+        margin: 40px 0 20px 0;
+    }
+
+
+    /* 공통 취소/다음 버튼 */
+    .commonBtn{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+    .cancelBtn,.nextBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 60px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 6px;
+    }
+    .cancelBtn{background: #6d6d6d;}
+    .nextBtn{
+        background: #FFAF01;
+        border: none;
+        font-family: "Noto Sans KR", sans-serif;
+        cursor: pointer;
+    }
+
+
+    /* 문의사항 안내 */
+    .loginInfo{
+        margin-top: 60px;
+        color: #6d6d6d;
+        font-weight: 500;
+        text-align: center;
+        font-size: 20px;
+        word-break: keep-all;
+    }
+    .blackColor{color: #393939;}
+
+    /* footer */
+    footer{
+        background: #333;
+        font-size: 22px;
+    }
+    footer .inner_content{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 30px 0;
+    }
+    .foot_menu{
+        display: flex;
+        color: #999;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+    .foot_menu>li{margin-right: 38px;}
+    .foot_menu>li:last-of-type{margin-right: 0;}
+    .foot_info{
+        display: flex;
+        color: #727272;
+        margin-bottom: 40px;
+    }
+    .foot_info>ul{
+        margin-right: 40px;
+    }
+    .foot_info>ul:last-of-type{margin-right: 0;}
+    .foot_info li{
+        padding: 10px 0;
+    }
+    .copy{
+        color: #606060;
+        font-size: 18px;
+
+    }
+
+
+}
