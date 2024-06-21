@@ -256,7 +256,7 @@
                                             <label for="userBirth">생년월일</label>
                                         </dt>
                                         <dd>
-                                            <input type="number" class="userBirth" maxlength="8" placeholder="예시) 19910101" data-maxlength="8" id="userBirth">
+                                            <input type="number" class="userBirth" placeholder="예시) 19910101" id="userBirth">
                                             <div class="dataError">생년월일을 입력해주세요.</div>
                                         </dd>
                                     </dl>
@@ -267,7 +267,7 @@
                                             <label for="userPhone1">휴대폰번호</label>
                                         </dt>
                                         <dd>
-                                            <input type="number" class="userPhone" id="userPhone1" maxlength="11" placeholder="휴대폰번호 - 제외 11자리" data-maxlength="11">
+                                            <input type="number" class="userPhone" id="userPhone1" placeholder="휴대폰번호 - 제외 11자리">
                                             <div class="dataError">휴대폰번호를 입력해주세요.</div>
                                         </dd>
                                     </dl>
@@ -334,10 +334,10 @@
                                 isValid("#userPhone1")
                                 let isValid1 = true
                                 if($("#userAgree1").is(":checked") == false){
-                                    $(".notiyf1").next().show();
+                                    $(".notify1").next().show();
                                     isValid1 = false;
                                 }else{
-                                    $(".notiyf1").next().hide();
+                                    $(".notify1").next().hide();
                                     isValid1 = true;
                                 }
                                 return false;
@@ -353,14 +353,14 @@
                                             <label for="companyName">사업자 확인</label>
                                         </dt>
                                         <dd>
-                                            <input type="text" class="groupName" placeholder="단체명"  id="companyName">
+                                            <input type="text" class="groupName" placeholder="단체명" id="companyName">
                                             <div class="dataError">단체명을 입력해주세요.</div>
                                         </dd>
                                         <dt>
                                             <label for="groupNumber">사업자 번호 확인</label>
                                         </dt>
                                         <dd class="businessNumber">
-                                            <input type="number" class="groupNumber" maxlength="13" placeholder="사업자등록번호" data-maxlength="13" id="groupNumber">
+                                            <input type="number" class="groupNumber" placeholder="사업자등록번호" id="groupNumber">
                                             <div class="dataError">사업자번호를 입력해주세요.</div>
                                             <a class="groupNum_btn" href="#">사업자 번호 확인</a>
                                         </dd>
@@ -462,7 +462,7 @@
                                             <label for="userPhone2">휴대폰번호</label>
                                         </dt>
                                         <dd>
-                                            <input type="number" class="userPhone" maxlength="11" placeholder="휴대폰번호 '-'제외 11자리" data-maxlength="11" id="userPhone2">
+                                            <input type="number" class="userPhone" placeholder="휴대폰번호 '-'제외 11자리" id="userPhone2">
                                             <div class="dataError">휴대폰번호를 입력해주세요.</div>
                                         </dd>
                                     </dl>
@@ -529,8 +529,6 @@
 
                         </script>
                     </div>
-                    
-                    
                 </div>
                 <div class="loginInfo">
                     <p>후원 관련 문의사항은 <span class="blackColor">후원관리팀 070-7603-1982</span> 혹은 <span class="blackColor">bestianwel@nate.com</span>로 문의해주시기 바랍니다.</p>
