@@ -624,27 +624,27 @@
         width: 33.333%;
         height: 100%;
     }
-    .pcContents .swiper-button-next, .pcContents  .swiper-button-prev {
+    .swiperButton{
         position: absolute;
-        top: var(--swiper-navigation-top-offset, 50%);
-        width: calc(var(--swiper-navigation-size) / 44* 27);
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
-        z-index: 10;
-        cursor: pointer;
+        bottom: 240px;
+        left: 50%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #3d3d3d;
     }
-    .pcContents .swiper-button-next{
-        right: 310px;
-        left: auto;
+    .swiperButton>.swiper-button-next{
+       background: url(../img/right.png) no-repeat 50% 50% / cover;
+       width: 40px;
+       height: 40px;
+       color: transparent;
+       transform: translateX(60px);
     }
-    .pcContents .swiper-button-prev{
-        right: auto;
-        left: 310px;
+    .swiperButton>.swiper-button-prev{
+        background: url(../img/left.png) no-repeat 50% 50% / cover;
+        width: 40px;
+        height: 40px;
+        color: transparent;
+        transform: translateX(-60px);
     }
+
     .banner_train .txtframe{
         width: 390px;
         font-size: 22px;
