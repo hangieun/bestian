@@ -2,13 +2,15 @@ $(document).ready(function(){
 
     //메인배너 슬라이드
     let count = 0
-    setInterval(function(){
+     setInterval(function(){
         count++
         if(count>3){count=0}
         $(".main_train").css("transform",`translateX(${count*-25}%)`)
         $(".main_btn").removeClass("on")
         $(".main_btn").eq(count).addClass("on")
-    },4000)
+
+    },3500)
+
 
     $(".main_train_ctrl>div").click(function(){
         let idx = $(this).index()
