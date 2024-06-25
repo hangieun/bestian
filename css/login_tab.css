@@ -32,7 +32,7 @@
         padding-top: 15px;
     }
     .menu_bar_open{
-        background: url(../img/8.menubar_black.svg) no-repeat 50% 50% / cover;
+        background: url(../img/menubar_black.svg) no-repeat 50% 50% / cover;
         display: block;
         width: 30px;
         height: 30px;
@@ -187,7 +187,7 @@
     /* 체크 버튼 눌렀을 때 */
     .checkLabel input:checked + .checkboxIcon::before{
         border: none;
-        background: url(../img/9.check.svg) #FFAF01 no-repeat 50% 50%;
+        background: url(../img/check.svg) #FFAF01 no-repeat 50% 50%;
     }
     /* --------------------------------------------- */
 

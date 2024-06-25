@@ -33,7 +33,7 @@
         padding-top: 15px;
     }
     .menu_bar_open{
-        background: url(../img/8.menubar_black.svg) no-repeat 50% 50% / cover;
+        background: url(../img/menubar_black.svg) no-repeat 50% 50% / cover;
         display: block;
         width: 30px;
         height: 30px;
@@ -167,10 +167,10 @@
         
     }
     .type1{
-        background: url(../img/10.joinType1.svg) no-repeat center 36px / 80px auto;
+        background: url(../img/joinType1.svg) no-repeat center 36px / 80px auto;
     }
     .type2{
-        background: url(../img/10.joinType2.svg) no-repeat center 36px / 80px auto;
+        background: url(../img/joinType2.svg) no-repeat center 36px / 80px auto;
     }
 
 
@@ -189,7 +189,7 @@
     .radioBtn{
         display: inline-block;
         margin-right: 7px;
-        background: url(../img/10.radiobtn.svg) no-repeat 50% 50% / cover;
+        background: url(../img/radiobtn.svg) no-repeat 50% 50% / cover;
         left: -9px;
         top: 2px;
         width: 25px;
@@ -201,7 +201,7 @@
       /* 체크 버튼 눌렀을 때 */
     input[type=radio]:checked + .radioBtn{
         display: inline-block;
-        background: url(../img/10.radiobtn_on.svg) no-repeat 50% 50% / cover;
+        background: url(../img/radiobtn_on.svg) no-repeat 50% 50% / cover;
     }
 
     /* --------------회원 정보 입력 프레임------------------ */
@@ -308,7 +308,7 @@
     .checkBtn{
         display: inline-block;
         margin-right: 7px;
-        background: url(../img/10.checkbox.svg) no-repeat 50% 50% / cover;
+        background: url(../img/checkbox.svg) no-repeat 50% 50% / cover;
         left: 0;
         top: 2px;
         width: 25px;
@@ -322,7 +322,7 @@
       input#userAgree2:checked + .checkBtn,
       input#userAgree3:checked + .checkBtn{
           display: inline-block;
-          background: url(../img/10.checkbox_on.svg) no-repeat 50% 50% / cover;
+          background: url(../img/checkbox_on.svg) no-repeat 50% 50% / cover;
       }
 
     .viewBtn{

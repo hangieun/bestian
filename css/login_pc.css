@@ -182,7 +182,7 @@
     /* 체크 버튼 눌렀을 때 */
     .checkLabel input:checked + .checkboxIcon::before{
         border: none;
-        background: url(../img/9.check.svg) #FFAF01 no-repeat 50% 50%;
+        background: url(../img/check.svg) #FFAF01 no-repeat 50% 50%;
     }
     /* --------------------------------------------- */
 
