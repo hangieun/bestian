@@ -493,6 +493,7 @@
     }
     .userName,.userMail{
         border: none;
+        border-radius: 0px;
         border-bottom: 1px solid #ccc;
         background: transparent;
         color: rgba(51, 51, 51);

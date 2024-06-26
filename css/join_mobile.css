@@ -211,10 +211,11 @@
         color: #FFAF01;
         font-size: 13px;
         font-weight: 500;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.7px;
         display: none;
     }
     input[type="text"], input[type="number"]{
+        background: transparent;
         font-size: 16px;
         border-radius: 0px;
         border-bottom: 1px solid #999;
@@ -247,23 +248,22 @@
 
     .groupName,.groupNumber,.staffName{
         border: none;
-        border-bottom: 1px solid #999;
         width: 100%;
         padding-bottom: 5px;
     }
     .groupnameFrame>dt+dd+dt{display: none;}
     .businessNumber{
         margin-top: 20px;
-        position: relative;
+    }
+    #numberFrame{
+        display: flex;
+        align-items: flex-end;
     }
     .groupNumber{
         width: 55%;
         margin-right: 10px;
     }
     .groupNum_btn{
-        position: absolute;
-        right: 0;
-        bottom: 0;
         font-size: 14px;
         padding: 10px;
         font-weight: 500;

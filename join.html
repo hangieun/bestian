@@ -359,9 +359,11 @@
                                             <label for="groupNumber">사업자 번호 확인</label>
                                         </dt>
                                         <dd class="businessNumber">
-                                            <input type="number" class="groupNumber" placeholder="사업자등록번호" id="groupNumber">
+                                            <div id="numberFrame">
+                                                <input type="number" class="groupNumber" placeholder="사업자등록번호" id="groupNumber">
+                                                <a class="groupNum_btn" href="#">사업자 번호 확인</a>
+                                            </div>
                                             <div class="dataError">사업자번호를 입력해주세요.</div>
-                                            <a class="groupNum_btn" href="#">사업자 번호 확인</a>
                                         </dd>
                                     </dl>
                                     <dl class="staff">
@@ -419,7 +421,7 @@
                         <script>
                             function check2(){
                                 isValid("#companyName")
-                                isValid("#groupNumber")
+                                isValid("#numberFrame")
                                 isValid("#staffName1")
                                 let isValid2 = true
                                 if($("#userAgree2").is(":checked") == false){
