@@ -491,11 +491,13 @@
         justify-content: space-between;
         flex-direction: column;
     }
-    .userName,.userMail{
-        border: none;
+    input[type="text"]{
+        background: transparent;
         border-radius: 0px;
         border-bottom: 1px solid #ccc;
-        background: transparent;
+    }
+    .userName,.userMail{
+        border: none;
         color: rgba(51, 51, 51);
         box-sizing: border-box;
         padding-bottom: 5px;
