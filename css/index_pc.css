@@ -2,6 +2,10 @@
     html{
         font-family: "Noto Sans KR", sans-serif;
     }
+    body.on{
+        height: 100vh; 
+        overflow: hidden;
+    }
     .allcontent{box-sizing: border-box;}
     .inner_content{
         width: 1200px;
@@ -587,8 +591,9 @@
     .pcContents .inner_content h4{
         font-size: 50px;
         font-weight: 700;
-        padding: 80px 0;
+        padding: 80px 0 50px 0;
     }
+   
     .banner_station{
         margin: 0 auto;
         width: 1200px;
@@ -672,18 +677,100 @@
         font-weight: 600;
         font-size: 34px;
     }
-    .userName,.userMail{
-        border: 1px solid #a3a3a3;
-        border-radius: 10px;
+    
+    /* 뉴스레터 팝업 */
+    .newsPopup_open{
+        border: none;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        background: #ffaf01;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: auto;
+        border-radius: 50px;
+        height: 40px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .newsPopup_open:hover{
+        background: #fff;
+        color: #FFAF01;
+    }
+    .newsPopup{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 1000;
+        display: none;
+    }
+    .newsPopup.on{display: block;}
+    .newsletter{
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        background: #fff;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 45px;
+        box-sizing: border-box;
+        width: 1200px;
+        height: 500px;
+    }
+    .newsletter>.txtframe>.newsletter_title{
+        color: #FFAF01;
+        font-weight: 600;
+        font-size: 34px;
+    }
+    .newsletter>.txtframe>p{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .userInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    #userName,#userMail{
+        border: none;
+        border-bottom: 1px solid #999;
         width: 300px;
         height: 50px;
-        background: #fff;
         color: rgba(51, 51, 51);
         box-sizing: border-box;
         padding-left: 10px;
         margin-bottom: 15px;
     }
-
+    input[type="text"]{
+        font-size: 18px;
+    }
+    .modal{
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 800;
+        display: none;
+    }
+    .modal.on{display: block;}
+    .popupClose{
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        background: url(../img/close_btn_white.svg) no-repeat 50% 50% / cover;
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
 
     /* 하단 로고 띠배너 */
     .contents_line{

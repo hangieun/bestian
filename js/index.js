@@ -146,6 +146,18 @@ $(document).ready(function(){
         centeredSlides: true
       });
 
+    
+    //뉴스레터 신청 팝업
+    $(".newsPopup_open").click(function(){
+        $(".modal").addClass("on")
+        $("body").addClass("on")
+        $(".newsPopup").addClass("on")
+    })
+    $(".popupClose").click(function(){
+        $(".modal").removeClass("on")
+        $("body").removeClass("on")
+        $(".newsPopup").removeClass("on")
+    })
 
 
 

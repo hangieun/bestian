@@ -185,7 +185,7 @@
     }
     .tab_menu{
         box-sizing: border-box;
-        width: 270px;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -436,8 +436,7 @@
         margin-bottom: 30px;
     }
     .banner_train>li{
-        width: 360px;
-        height: 220px;
+        height: 230px;
         border-radius: 15px;
         background: #fff;
         border: 1px solid rgba(58, 58, 58, 0.2);
@@ -490,17 +489,18 @@
     .userInfo{
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
     .userName,.userMail{
         border: none;
         border-bottom: 1px solid #ccc;
-        background: #fff;
+        background: transparent;
         color: rgba(51, 51, 51);
         box-sizing: border-box;
         padding-bottom: 5px;
+        width: 80%;
     }
-    .userName{width: 120px;}
-    .userMail{width: 200px;}
+    .userMail{margin-top: 10px;}
     .txt_title+p{font-size: 16px;}
 
     /* footer */
