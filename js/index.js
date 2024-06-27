@@ -134,16 +134,14 @@ $(document).ready(function(){
 
      //모바일 메인배너 슬라이드
      var mobileMain_swiper = new Swiper(".mobileMain_station",{
-        slidesPerView: 1.5,
-        spaceBetween: 5,
-        centeredSlides: true
+        slidesPerView: 1.2,
+        spaceBetween: 10,
       });
 
     // 모바일 뉴스배너 슬라이드
     var mobileNews_swiper = new Swiper(".moNews_station",{
-        slidesPerView: 1.5,
-        spaceBetween: 5,
-        centeredSlides: true
+        slidesPerView: 1.2,
+        spaceBetween: 10,
       });
 
     
