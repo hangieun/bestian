@@ -16,7 +16,7 @@
         width: 100%;
         display: flex;
     }
-    .pcHeader, .moHeader{display: none;}
+    .pcHeader, .moHeader{display: none!important;}
     .pcHeader>.top, .pcHeader>.bottom{display: none;}
     .tabHeader>.inner_content{
         display: flex;

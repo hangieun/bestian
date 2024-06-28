@@ -6,7 +6,7 @@
         width: 87%;
         margin: 0 auto;
     }
-    .pcHeader, .tabHeader{display: none;}
+    .pcHeader, .tabHeader{display: none!important;}
     .pcHeader>.top, .pcHeader>.bottom{display: none;}
 
     .moHeader{
@@ -103,7 +103,7 @@
 
     /* 회원가입 상단 */
     .wrap{
-        width: 350px;
+        width: 100%;
         margin: 45px auto;
         color: #393939;
         font-size: 15px;
@@ -411,7 +411,7 @@
     .blackColor{color: #393939;}
 
 
-     /* footer */
+    /* footer */
     footer{
         border-top: 1px solid #333;
         font-size: 12px;
@@ -420,7 +420,9 @@
        padding: 30px 0;
     }
     .foot_menu{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 6px;
         color: #282828;
         font-weight: 500;
         margin-bottom: 20px;
@@ -428,7 +430,6 @@
     .foot_menu>li{margin-right: 15px;}
     .foot_info{
         color: #727272;
-        display: flex;
     }
     .foot_info>ul{
         margin-right: 20px;
