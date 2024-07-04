@@ -268,15 +268,16 @@
                                     <a href="#" class="confirmBtn">인증번호 발송</a>
                                 </div>
                                 <div class="notifyFrame notify1">
-                                    <span class="notifyCheck">
-                                        <label for="userAgree1">
-                                            <input type="checkbox" id="userAgree1">
-                                            <span class="checkBtn"></span>
-                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
-                                        </label>
-                                        
-                                    </span>
-                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="notifyTop">
+                                        <span class="notifyCheck">
+                                            <label for="userAgree1">
+                                                <input type="checkbox" id="userAgree1">
+                                                <span class="checkBtn"></span>
+                                                <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                            </label>
+                                        </span>
+                                        <a href="#" class="viewBtn">보기 </a>
+                                    </div>
                                     <div class="termsView">
                                         <div class="viewTxt">
                                             <table>
@@ -354,9 +355,9 @@
                                         <dd class="businessNumber">
                                             <div id="numberFrame">
                                                 <input type="number" class="groupNumber" placeholder="사업자등록번호" id="groupNumber">
-                                                <a class="groupNum_btn" href="#">사업자 번호 확인</a>
+                                                <div class="dataError">사업자번호를 입력해주세요.</div>    
                                             </div>
-                                            <div class="dataError">사업자번호를 입력해주세요.</div>
+                                            <a class="groupNum_btn" href="#">사업자 번호 확인</a>
                                         </dd>
                                     </dl>
                                     <dl class="staff">
@@ -371,14 +372,16 @@
                                     </dl>
                                 </div>
                                 <div class="notifyFrame notify2">
-                                    <span class="notifyCheck">
-                                        <label for="userAgree2">
-                                            <input type="checkbox" id="userAgree2">
-                                            <span class="checkBtn"></span>
-                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
-                                        </label>
-                                    </span>
-                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="notifyTop">
+                                        <span class="notifyCheck">
+                                            <label for="userAgree2">
+                                                <input type="checkbox" id="userAgree2">
+                                                <span class="checkBtn"></span>
+                                                <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                            </label>
+                                        </span>
+                                        <a href="#" class="viewBtn">보기 </a>
+                                    </div>
                                     <div class="termsView">
                                         <div class="viewTxt">
                                             <table>
@@ -414,7 +417,7 @@
                         <script>
                             function check2(){
                                 isValid("#companyName")
-                                isValid("#numberFrame")
+                                isValid("#groupNumber")
                                 isValid("#staffName1")
                                 let isValid2 = true
                                 if($("#userAgree2").is(":checked") == false){
@@ -465,14 +468,16 @@
                                     <a href="#" class="confirmBtn">인증번호 발송</a>
                                 </div>
                                 <div class="notifyFrame notify3">
-                                    <span class="notifyCheck">
-                                        <label for="userAgree3">
-                                            <input type="checkbox" id="userAgree3">
-                                            <span class="checkBtn"></span>
-                                            <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
-                                        </label>
-                                    </span>
-                                    <a href="#" class="viewBtn">보기 </a>
+                                    <div class="notifyTop">
+                                        <span class="notifyCheck">
+                                            <label for="userAgree3">
+                                                <input type="checkbox" id="userAgree3">
+                                                <span class="checkBtn"></span>
+                                                <span class="pColor">[필수]</span>&nbsp;&nbsp;개인정보 수집 및 이용 동의
+                                            </label>
+                                        </span>
+                                        <a href="#" class="viewBtn">보기 </a>
+                                    </div>
                                     <div class="termsView">
                                         <div class="viewTxt">
                                             <table>

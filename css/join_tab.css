@@ -271,9 +271,9 @@
     .groupNum_btn{
         position: absolute;
         right: 0;
-        bottom: 0;
+        top: 0;
         font-size: 16px;
-        padding: 10px;
+        padding: 8px;
         font-weight: 500;
         border: 1px solid #393939;
         border-radius: 8px;
@@ -291,7 +291,12 @@
         font-size: 18px;
         border: 1px solid #6D6D6D;
         box-sizing: border-box;
-        padding: 10px 8px;
+        padding: 10px 5px;
+    }
+    .notifyTop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     input[type="checkbox"]{
         display: none;
@@ -326,7 +331,6 @@
       }
 
     .viewBtn{
-        margin-left: 30px;
         font-weight: 500;
     }
     .viewBtn:hover{

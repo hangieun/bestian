@@ -288,6 +288,11 @@
         box-sizing: border-box;
         padding: 10px 8px;
     }
+    .notifyTop{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     input[type="checkbox"]{
         display: none;
     }
