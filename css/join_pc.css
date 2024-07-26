@@ -195,7 +195,7 @@
       /* 체크 버튼 눌렀을 때 */
     input[type=radio]:checked + .radioBtn{
         display: inline-block;
-        background: url(../img/radiobtn_on.svg) no-repeat 50% 50% / cove8r;
+        background: url(../img/radiobtn_on.svg) no-repeat 50% 50% / cover;
     }
 
     /* --------------회원 정보 입력 프레임------------------ */
