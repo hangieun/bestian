@@ -808,6 +808,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 15px;
 
     }
     .line_train>li>a{
@@ -816,9 +817,12 @@
         justify-content: center;
         height: 70px;
         width: 240px;
+        vertical-align: middle;
     }
     .line_train>li img{
         object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 

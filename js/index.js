@@ -31,21 +31,6 @@ $(document).ready(function(){
         $(".tab_train>li").removeClass("on")
         $(".tab_train>li").eq(tab_count).addClass("on")
         
-        // $(".tab_train").css("transform",`translateX(${tab_count*-25}%)`)
-        
-        // if(tab_count==0){
-        //     increase_num("#ni1")
-        //     increase_num("#ni2")
-        // }else if(tab_count==1){
-        //     increase_num("#ni3")
-        //     increase_num("#ni4")
-        // }else if(tab_count==2){
-        //     increase_num("#ni5")
-        //     increase_num("#ni6")
-        // }else{
-        //     increase_num("#ni7")
-        //     increase_num("#ni8")
-        // }
     })
 
 
@@ -53,10 +38,8 @@ $(document).ready(function(){
     let slide_count = 0
     $(".slide_viewer>li").click(function(){
         slide_count = $(this).index()
-        //  alert(slide_count)
         swiper_sup.slideToLoop(slide_count,1000)
     })
-
     
     const swiper_sup = new Swiper('.support_bottom .sup_station',{
         loop:true,
@@ -67,17 +50,14 @@ $(document).ready(function(){
             type: "progressbar",
         },
         breakpoints: {
-        // when window width is >= 320px
             320: {
                 slidesPerView: 1,
                 spaceBetween: 20
             },
-            // when window width is >= 480px
             780: {
                 slidesPerView: 1,
                 spaceBetween: 30
             },
-            // when window width is >= 640px
             980: {
                 slidesPerView: 3,
                 spaceBetween: 40

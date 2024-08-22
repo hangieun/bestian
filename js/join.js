@@ -1,9 +1,9 @@
 $(document).ready(function(){
     let btnState = false
     $(".viewBtn").click(function(event) {
-        event.preventDefault(); // 링크의 기본 동작을 막습니다.
-        $(".termsView").slideToggle(); // .termsView 요소를 슬라이드 토글합니다.
-        // 버튼 텍스트를 "보기"와 "닫기"로 토글
+        event.preventDefault();
+        $(".termsView").slideToggle();
+        // 보기, 닫기 버튼으로 토글
 
         if (btnState==false) {
             $(this).text("닫기");
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
      // 개인 회원가입 버튼 클릭 시
      $(".type1").click(function(event) {
-        event.preventDefault(); // 기본 링크 동작 방지
+        event.preventDefault();
         $(".joinRadio").hide();
         $(".businessUser").hide();
         $(".groupUser").hide();
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     // 단체 회원가입 버튼 클릭 시
     $(".type2").click(function(event) {
-        event.preventDefault(); // 기본 링크 동작 방지
+        event.preventDefault();
         $(".personalUser").hide();
         $(".groupUser").hide();
         $(".joinRadio").show();
